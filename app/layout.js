@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import './globals.css';
 
 export const metadata = {
@@ -8,18 +9,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <div className="header-background">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <body className="min-h-screen bg-stone-950 text-amber-50 antialiased">
+        <div className="header-background fixed inset-x-0 top-0 -z-10 opacity-90">
+          <svg
+            className="block w-full h-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+          >
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop
                   offset="0%"
-                  style={{ stopColor: '#59453c', stopOpacity: '1' }}
+                  style={{ stopColor: '#92492a', stopOpacity: '1' }}
                 />
                 <stop
                   offset="100%"
-                  style={{ stopColor: '#8f3a09', stopOpacity: '1' }}
+                  style={{ stopColor: '#463821', stopOpacity: '1' }}
                 />
               </linearGradient>
             </defs>
@@ -29,7 +34,7 @@ export default function RootLayout({ children }) {
             ></path>
           </svg>
         </div>
-
+    <Header />
         {children}
       </body>
     </html>
