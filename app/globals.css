@@ -37,14 +37,12 @@ svg {
 
 .not-found h1,
 .error h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0px;
   font-weight: 900;
-  color: #262626;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
+  color: linear-gradient(90deg, #f9572a, #ffc905);
   -webkit-clip: text;
-  -webkit-text-fill-color: transparent;
   background-size: cover;
   background-position: center;
   font-family: 'Montserrat', sans-serif;
