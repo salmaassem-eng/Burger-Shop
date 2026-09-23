@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import logo from '@/assets/logo.png';
+import NavLink from './nav-link';
 
 export default function Header() {
     return (
@@ -15,31 +16,14 @@ export default function Header() {
             <nav>
                 <ul className="flex items-center gap-2 sm:gap-4">
                     <li>
-                        <Link
-                            href="/meals"
-                            className="rounded-full px-4 py-2 font-bold text-amber-50 text-white transition-colors hover:bg-amber-400 hover:text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-300"
-                        >
-                            Meals
-                        </Link>
+                       <NavLink href="/meals">Our Meals</NavLink>
                     </li>
                     <li>
-                        <Link
-                            href="/meals/share"
-                            className="rounded-full bg-amber-400 px-5 py-2 font-bold text-stone-900 shadow-md transition-colors hover:bg-red-600 hover:text-amber-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-300"
-                        >
-                            Share Meal
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href="/community"
-                            className="rounded-full px-4 py-2 font-bold text-amber-50 transition-colors hover:bg-amber-400 hover:text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-300"
-                        >
-                            Community
-                        </Link>
+                        <NavLink href="/community">Community</NavLink>
                     </li>
                 </ul>
             </nav>
         </header>
     );
 }
+    
