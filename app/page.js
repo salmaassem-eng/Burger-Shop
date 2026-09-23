@@ -1,16 +1,19 @@
 import Link from 'next/link';
 import classes from './page.module.css';
+import ImageSlideshow from './components/SlideShow';
 
 export default function Home() {
   return (
    <>
    <header className={classes.header}>
-    <div className={classes.slideshow}></div>
+    <div className={classes.slideshow}>
+      <ImageSlideshow />
+    </div>
 
     <div>
       <div className={classes.hero}>
-        <h1>Burger Shop</h1>
-        <p>Welcome to our burger shop! We serve the best burgers in town.</p>
+        <h1>Yummy Meals</h1>
+        <p>Welcome to our restaurant! We serve the best meals in town.</p>
       </div>
 
     <div className={classes.cta}>
@@ -20,7 +23,7 @@ export default function Home() {
     </div>
 
    </header>
-   
+
    <main>
      <section className={classes.section}>
           <h2>How it works</h2>

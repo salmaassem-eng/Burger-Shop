@@ -1,7 +1,7 @@
 .header {
   display: flex;
   gap: 3rem;
-  margin: 3rem auto;
+  margin: 4rem auto;
   width: 90%;
   max-width: 75rem;
 }
@@ -12,6 +12,7 @@
 }
 
 .hero {
+    margin: 2rem auto;
   color: #ddd6cb;
   font-size: 1.5rem;
 }

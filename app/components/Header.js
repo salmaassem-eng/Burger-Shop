@@ -10,7 +10,7 @@ export default function Header() {
                     src={logo.src}
                     alt="Logo for Resturant"
                 />
-            <h1 className="text-2xl font-bold text-white">Burger Shop</h1>
+            <h1 className="text-2xl font-bold text-white">Yummy Meals</h1>
             </Link>
             <nav>
                 <ul className="flex items-center gap-2 sm:gap-4">
